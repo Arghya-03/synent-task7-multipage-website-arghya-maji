@@ -141,3 +141,20 @@ GitHub: [Arghya-03](https://github.com/Arghya-03)
 ---
 
 Built with creativity and React.
+
+## ✅ Project Status
+
+The website is fully implemented with four responsive pages:
+- Home
+- About
+- Services
+- Contact
+
+### Quality Checks
+- ESLint: Passed
+- Production build: Passed
+- Desktop navigation: Tested
+- Mobile navigation: Tested
+- Contact form validation: Tested
+
+**Note:** The contact form currently demonstrates frontend validation and a success message. It does not send messages to a backend or email service.
