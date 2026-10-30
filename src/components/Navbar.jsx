@@ -16,21 +16,26 @@ const Navbar = () => {
 
   return (
     <header className="navbar">
-
       <NavLink to="/" className="logo" onClick={closeMenu}>
         STUDIO<span>.</span>
       </NavLink>
 
       <button
+        type="button"
         className="menu-toggle"
         onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle navigation menu"
+        aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
         aria-expanded={menuOpen}
+        aria-controls="primary-navigation"
       >
         {menuOpen ? "✕" : "☰"}
       </button>
 
-      <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+      <nav
+        id="primary-navigation"
+        aria-label="Main navigation"
+        className={`nav-links ${menuOpen ? "open" : ""}`}
+      >
         {navItems.map((item) => (
           <NavLink
             key={item.name}
@@ -49,7 +54,6 @@ const Navbar = () => {
       <NavLink to="/contact" className="nav-cta" onClick={closeMenu}>
         Let's Talk <span>↗</span>
       </NavLink>
-
     </header>
   );
 };
