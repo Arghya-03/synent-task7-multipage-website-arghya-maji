@@ -1,62 +1,48 @@
 
 # STUDIO. — Creative Digital Agency Website
 
-A modern, responsive, multi-page creative studio website built with React and Vite as part of the Synent Technologies Web Development Internship — Task 7.
+A modern, responsive, multi-page creative studio website built with React and Vite as part of the **Synent Technologies Web Development Internship — Task 7**.
 
-## 🌐 Project Overview
+## Screenshots
 
-STUDIO. is a creative digital agency website designed with bold typography, vibrant orange accents, dark backgrounds, and modern layouts.
+### Home Page
+![Home Page](screenshots/01-homepage.png)
 
-The website showcases a creative studio through four dedicated pages with consistent navigation and responsive design.
+### About Page
+![About Page](screenshots/02-about.png)
 
-## ✨ Features
+### Services Page
+![Services Page](screenshots/03-services.png)
 
-### 1. Home Page
-- Bold hero section with creative typography.
-- Animated gradient circle.
-- Studio introduction.
-- Featured services preview.
-- Call-to-action buttons.
+### Contact Page
+![Contact Page](screenshots/04-contact.png)
 
-### 2. About Page
-- Studio introduction and philosophy.
-- Creative visual elements.
-- Studio statistics.
+## Features
 
-### 3. Services Page
-- Brand Identity.
-- Web Design.
-- Web Development.
-- Creative Strategy.
-- Interactive service cards.
+- Four separate pages: Home, About, Services, and Contact.
+- Navigation between pages using React Router DOM.
+- Modern dark-themed creative studio design.
+- Reusable Navbar and Footer components.
+- Contact form with required-field and email-format validation.
+- Frontend success message after form submission.
+- Responsive layout and mobile navigation.
 
-### 4. Contact Page
-- Contact information.
-- Name, email, subject, and message fields.
-- Required-field validation.
-- Frontend success message after submission.
+## Technology Stack
 
-### Additional Features
-- Responsive design for desktop and mobile.
-- React Router navigation.
-- Mobile hamburger menu.
-- Shared navbar and footer.
-- Smooth hover effects and animations.
-
-## 🛠️ Technology Stack
-
-- React
+- React 19
 - Vite
-- JavaScript
+- JavaScript (ES6+)
+- HTML5
 - CSS3
 - React Router DOM
 - ESLint
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 src/
 ├── assets/
+│   └── hero.png
 ├── components/
 │   ├── Navbar.jsx
 │   └── Footer.jsx
@@ -65,15 +51,22 @@ src/
 │   ├── About.jsx
 │   ├── Services.jsx
 │   └── Contact.jsx
-├── styles/
 ├── App.jsx
 ├── App.css
+├── index.css
 └── main.jsx
+
+screenshots/
+├── 01-homepage.png
+├── 02-about.png
+├── 03-services.png
+└── 04-contact.png
 ```
 
-## ⚙️ Installation and Setup
+## Installation and Setup
 
 ### Prerequisites
+
 - Node.js
 - npm
 - Git
@@ -104,57 +97,49 @@ npm run dev
 
 Open the local URL displayed in your terminal.
 
-## 🏗️ Production Build
-
-To generate a production build:
+## Production Build
 
 ```bash
 npm run build
 ```
 
-## 🧪 Testing
-
-The project can be checked using:
+## Code Quality Check
 
 ```bash
-npm run build
+npm run lint
 ```
 
-Also manually test:
-- Navigation between all four pages.
-- Mobile hamburger menu.
-- Contact form required-field validation.
-- Responsive layouts.
+## Contact Form Note
 
-## 📌 Internship Information
+The contact form currently demonstrates frontend functionality, including required-field validation, email-format validation, and a success message.
+
+It does not currently send emails or store submitted messages in a backend or database.
+
+## Demo Video
+
+Task 7 demonstration video will be added here after publishing on LinkedIn.
+
+## Internship Information
 
 **Organization:** Synent Technologies  
 **Internship:** Web Development Internship  
 **Task:** Task 7 — Multi-Page Website
 
-## 👨‍💻 Author
+## Author
 
 **Arghya Maji**
 
-GitHub: [Arghya-03](https://github.com/Arghya-03)
+GitHub: https://github.com/Arghya-03
+
+## Project Status
+
+- Four website pages implemented.
+- Page navigation tested.
+- Contact form validation tested.
+- Dummy form submission tested.
+- Production build: Passed.
+- ESLint: Passed.
 
 ---
 
 Built with creativity and React.
-
-## ✅ Project Status
-
-The website is fully implemented with four responsive pages:
-- Home
-- About
-- Services
-- Contact
-
-### Quality Checks
-- ESLint: Passed
-- Production build: Passed
-- Desktop navigation: Tested
-- Mobile navigation: Tested
-- Contact form validation: Tested
-
-**Note:** The contact form currently demonstrates frontend validation and a success message. It does not send messages to a backend or email service.
